@@ -20,6 +20,8 @@ const dashboard = require("./src/routes/dashboard_route");
 const dbMethods = require("./src/config/mongoose_config");
 const userAuth = require("./src/middlewares/user_auth");
 const settings = require("./src/routes/settings_route");
+
+// Start Express app
 const app = express();
 
 // Setting view engine
