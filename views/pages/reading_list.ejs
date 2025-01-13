@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../layouts/head', {title: 'Reading list | BlogNest'}) %>
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <%- include('../partials/top_app_bar') %>
+
+    <main class="main">
+      <!--
+        - #HOME
+      -->
+      <article class="page">
+        <div class="container">
+          <h2 class="headline-small page-title text-on-surface">
+            Reading list
+          </h2>
+
+          <div class="blog-list">
+            <% if (locals.readingListBlogs.length) { %> <%
+            locals.readingListBlogs.forEach(blog => { %> <%-
+            include('../partials/card', {blog}) %> <% });%> <% } else {%>
+            <p class="body-large text-onsurface-variant">
+              You haven't added any article in your reading list.
+            </p>
+            <% } %>
+          </div>
+          <% if(locals.pagination.next || locals.pagination.prev) { %> <%-
+          include('../partials/pagination') %> <% } %>
+        </div>
+      </article>
+    </main>
+
+    <!-- 
+      - #FOOTER
+    -->
+    <%- include('../layouts/footer') %>
+  </body>
+</html>
