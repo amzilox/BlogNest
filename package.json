@@ -2,7 +2,7 @@
   "name": "blognest",
   "version": "1.0.0",
   "source": "./public/js/script.js",
-  "main": "./public/js/dist.js",
+  "main": "./public/js/bundle.js",
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js",
