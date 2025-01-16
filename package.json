@@ -24,8 +24,7 @@
     "express-session": "^1.18.1",
     "highlight.js": "^11.10.0",
     "markdown-it": "^14.1.0",
-    "mongoose": "^8.8.0",
-    "parcel": "^2.13.3"
+    "mongoose": "^8.8.0"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
