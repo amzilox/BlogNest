@@ -7,7 +7,7 @@
     "dev": "nodemon app.js",
     "start": "node app.js",
     "watch:js": "parcel watch ./public/js/script.js",
-    "build:js": "parcel build ./public/js/script.js"
+    "build:js": "npm install && parcel build ./public/js/script.js"
   },
   "keywords": [],
   "author": "",
@@ -28,9 +28,11 @@
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "parcel": "^2.13.3"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=16.x",
+    "npm": ">=7.x"
   }
 }
