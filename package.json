@@ -7,7 +7,7 @@
     "dev": "nodemon app.js",
     "start": "node app.js",
     "watch:js": "parcel watch ./public/js/script.js",
-    "build:js": "parcel build ./public/js/script.js"
+    "build:js": "parcel build ./public/js/script.js --cache-dir .parcel-cache"
   },
   "keywords": [],
   "author": "",
