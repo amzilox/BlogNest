@@ -2,6 +2,7 @@
 
 const MarkdownIt = require("markdown-it");
 const hljs = require("highlight.js").default;
+const markdownItLinkAttributes = require("markdown-it-link-attributes");
 
 const markdown = new MarkdownIt({
   // Convert '\n' in paragraphs into <br>
@@ -24,6 +25,14 @@ const markdown = new MarkdownIt({
     } catch (error) {
       console.error("Error highlighting language: ", error.message);
     }
+  },
+});
+
+// Add the plugin to ensure links open in a new tab
+markdown.use(markdownItLinkAttributes, {
+  attrs: {
+    target: "_blank",
+    rel: "noopener noreferrer", // Optional for security
   },
 });
 
