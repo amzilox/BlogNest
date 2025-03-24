@@ -61,6 +61,116 @@ This repository is currently private, so you won't be able to access it directly
 
 But don't worry! 😊
 
+## Files Structure:
+
+├── .editorconfig
+├── .gitignore
+├── LICENSE
+├── app.js
+├── package-lock.json
+├── package.json
+├── public
+    ├── css
+    │   └── style.css
+    ├── images
+    │   ├── dark-mode.svg
+    │   ├── favicon.svg
+    │   ├── light-mode.svg
+    │   ├── logo-dark.svg
+    │   ├── logo-light.svg
+    │   └── profilePhoto-default.jpg
+    └── js
+    │   ├── bundle.js
+    │   ├── bundle.js.map
+    │   ├── config.js
+    │   ├── count_visits.js
+    │   ├── create_blog.js
+    │   ├── delete_blog.js
+    │   ├── dialog.js
+    │   ├── login.js
+    │   ├── reaction.js
+    │   ├── reading_list.js
+    │   ├── register.js
+    │   ├── script.js
+    │   ├── settings.js
+    │   ├── snackbar.js
+    │   ├── update_blog.js
+    │   └── utils
+    │       ├── LocalStorage_theme.js
+    │       ├── imageAsDataUrl.js
+    │       └── imagePreview.js
+├── readme.md
+├── screenshots
+    ├── 1.png
+    ├── 2.png
+    ├── accueil-pagination.png
+    ├── accueil.png
+    ├── dashboard-mobile dark.png
+    └── post-mobile dark.png
+├── src
+    ├── config
+    │   ├── cloudinary_config.js
+    │   ├── markdown_it_config.js
+    │   └── mongoose_config.js
+    ├── controllers
+    │   ├── blog_delete_controller.js
+    │   ├── blog_detail_controller.js
+    │   ├── blog_update_controller.js
+    │   ├── create_blog_controller.js
+    │   ├── dashboard_controller.js
+    │   ├── home_controller.js
+    │   ├── login_controller.js
+    │   ├── logout_controller.js
+    │   ├── profile_controller.js
+    │   ├── reaction_controller.js
+    │   ├── reading_list_controller.js
+    │   ├── register_controller.js
+    │   ├── settings_controller.js
+    │   └── visit_controller.js
+    ├── middlewares
+    │   └── user_auth.js
+    ├── models
+    │   ├── blog_model.js
+    │   └── user_model.js
+    ├── routes
+    │   ├── blog_delete_route.js
+    │   ├── blog_detail_route.js
+    │   ├── blog_update_route.js
+    │   ├── create_blog_route.js
+    │   ├── dashboard_route.js
+    │   ├── home_route.js
+    │   ├── login_route.js
+    │   ├── logout_route.js
+    │   ├── profile_route.js
+    │   ├── reading_list_route.js
+    │   ├── register_route.js
+    │   └── settings_route.js
+    └── utils
+    │   ├── generate_username.js
+    │   ├── get_pagination.js
+    │   └── get_reading_time.js
+└── views
+    ├── layouts
+        ├── footer.ejs
+        └── head.ejs
+    ├── pages
+        ├── 404.ejs
+        ├── blog_detail.ejs
+        ├── blog_update.ejs
+        ├── create_blog.ejs
+        ├── dashboard.ejs
+        ├── home.ejs
+        ├── login.ejs
+        ├── profile.ejs
+        ├── reading_list.ejs
+        ├── register.ejs
+        └── settings.ejs
+    └── partials
+        ├── card.ejs
+        ├── list_item.ejs
+        ├── pagination.ejs
+        └── top_app_bar.ejs
+
 I'm actively working on making it public soon.
 
 Stay tuned for updates! 🚀
