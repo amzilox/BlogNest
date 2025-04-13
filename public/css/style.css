@@ -252,6 +252,7 @@
     --on-surface-disabled: var(--on-surface-disabled-light);
     --on-surface-disabled-text: var(--on-surface-disabled-text-light);
     --surface-variant: var(--surface-variant-light);
+    --on-surface-variant: var(--on-surface-variant-light);
     --outline: var(--outline-light);
     --outline-variant: var(--outline-variant-light);
     --secondary-container: var(--secondary-container-light);
@@ -312,6 +313,7 @@ body.light-mode {
   --on-surface-disabled: var(--on-surface-disabled-light);
   --on-surface-disabled-text: var(--on-surface-disabled-text-light);
   --surface-variant: var(--surface-variant-light);
+  --on-surface-variant: var(--on-surface-variant-light);
   --outline: var(--outline-light);
   --outline-variant: var(--outline-variant-light);
   --secondary-container: var(--secondary-container-light);
